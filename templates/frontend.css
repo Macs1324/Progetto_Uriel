@@ -1,9 +1,73 @@
 body
 {
-    background-color: antiquewhite;
+    background-color:#EDD12B;
+    margin: 0%;
+}
+#id-body
+{
+    background-color: white;
+    height: 92%;
+    margin-top: 2%;
+}
+.class-title-container
+{
+    position: absolute;
+    width:100%;
+    height: 28%;
 }
 .class-title
 {
-    text-align: center;
+    margin-top: 1%;
+    margin-left: 22%;
+    height:80%;
+    width: 50%;
+}
+.class-title-image
+{
+    float: left;
+    margin-top: 3%;
+    margin-left: 31%;
+
+}
+.class-title-name
+{
+    float: right;
+    margin-top: 4%;
+    margin-right: 31%;
+    font-size: 3.8em;
+    font-family: 'Arial Black';
+}
+.class-title-name-Uriel
+{
+    color: #069DAB;
+}
     
+.class-title-name-Project
+{
+    color:#EDD12B;
+}
+.class-menu-container
+{
+    position: absolute;
+    margin-top: 14%;
+    height: 6%;
+    width: 100%;
+    background-color:  #069DAB;
+}
+.class-menu-sub-container
+{
+    margin-top: 0.0%;
+    height: 94%;
+    
+}
+.class-menu-list
+{
+    list-style-type: none;
+
+}
+.class-menu-item
+{
+    float: left;
+    margin-left: 15.5%;
+    font-size: 1.6em;
 }
