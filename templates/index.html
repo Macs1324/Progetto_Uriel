@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Progetto Uriel</title>
+</head>
+<body onload="_ready()">
+  <script type="text/javascript">
+    var img_index = 0;
+    var num_images = 3;
+
+    function slideshow_switch(index)
+    {
+      for(var i = 0; i < num_images; i += 1)
+      {
+        document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img")[i].style.opacity = 0;
+      }
+      document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img")[index].style.opacity = 1;
+    }
+
+    function slideshow_next()
+    {
+      img_index = (img_index + 1) % 3;
+      slideshow_switch(img_index);
+    }
+  </script>
+  <div class="page">
+    <div class="img-label-container">
+      <img src="images/logouriel1.png">
+    </div>
+    <nav class="header">
+      <div class="menu">
+        <div class="item">
+          <p>
+            Cani
+          </p>
+        </div>
+        <div class="item">
+          <p>
+            Gatti
+          </p>
+        </div>
+        <div class="item">
+          <p>
+            Aragoste
+          </p>
+        </div>
+        <div class="item">
+          <p>
+            Chi siamo
+          </p>
+        </div>
+        <div class="item">
+          <p>
+            Sconto per ristoranti
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="slideshow-container">
+      
+    </div>
+
+  </div>
+    <button onclick="slideshow_next();">SWITCH IMAGE LOSER</button>
+</body>
+</html>
