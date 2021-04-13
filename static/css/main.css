@@ -29,6 +29,8 @@ body
 .logo img
 {
     width: 20%;
+    transition-property: width;
+    transition-duration: 0.5s;
 }
 
 .header
@@ -39,7 +41,9 @@ body
     position: sticky;
     position: -webkit-sticky;
     top: 0; /* required */
-
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    
     /* box-shadow: 0px 1em 0.5em 0.1em rgba(0, 0, 0, 0.6); */
 }
 
@@ -55,7 +59,7 @@ body
 {
     display: inline-block;
     font-family: "Sansumi-UL";
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 10px;
     border-left: #eee solid 1px;
     border-right: #eee solid 1px;
@@ -63,6 +67,42 @@ body
     text-align: center;
 }
 
+.slideshow-container
+{
+    margin-left: 5%;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.slideshow .item img
+{
+    width: 100%;
+}
+
+.slideshow .buttons
+{
+    top: 50%;
+    height: 15px;
+    text-align: center;
+}
+
+.slideshow-container .buttons .dot
+{
+    height: 15px;
+    width: 15px;
+    background-color: #aaa;
+    
+    transition-property: background-color;
+    transition-duration: 1s;
+
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 100%;
+}
 
 /*---------------------------------             MOBILE VERSION */
 @media (max-width: 767px)
@@ -74,3 +114,12 @@ body
 }
 
 /*-------------------------------------                 ANIMATIONS*/
+@keyframes fade
+{
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
