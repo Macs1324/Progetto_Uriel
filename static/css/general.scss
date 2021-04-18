@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Sansumi-UL';
+    src: URL('../fonts/Sansumi-UltraLight.ttf') format('truetype');
+  }
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+$black : black;

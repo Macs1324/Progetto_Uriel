@@ -4,64 +4,179 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
-  <link href="//db.onlinewebfonts.com/c/5a774fb0d936a5c77c616acc2192c8db?family=Avenir+Next+Cyr+Ultra+Light" rel="stylesheet" type="text/css"/>
+  <!-- link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" -->
+  <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"> -->
+  <link rel="stylesheet" href="../static/css/style.css">
   <title>Progetto Uriel - Homepage</title>
 
-  <script src="{{ url_for('static', filename='js/index.js') }}">
-  </script>
-
+  
 </head>
 <body>
   <div class="page">
-    <!--HEADER-->
-    <div class="header">
-      <div class="logo">
-        <img src="{{ url_for('static', filename='img/logo-complete.svg') }}">
-      </div>
-      <div class="navbar">
-        <span class="item">
-          I nostri servizi
-        </span>
-        <span class="item">
-          Chi siamo
-        </span>
-        <span class="item">
-          Il book
-        </span>
-        <span class="item">
-          I consigli
-        </span>
-      </div>
-    </div>
-    <!--FIRST SECTION-->
-    <div class="section">
-      <!--SLIDESHOW-->
-      <div class="slideshow-container">
-        <div class="slideshow">
-          <a href="#" class="item">
-            <img src="{{ url_for('static', filename='img/cane1.jfif') }}">
+      <!--HEADER-->
+      <div class="header">
+        <div class="logo">
+          <!-- <img src="{{ url_for('static', filename='img/logo-complete.svg') }}"> -->
+          <img src="../static/img/logo-complete.svg" alt="">
+        </div>
+        <div class="hamburger">
+          <img src="../static/img/Hamburger_icon.svg" alt="">
+        </div>
+        <div class="navbar">
+          <a class="item">
+            <b>  
+              I nostri servizi
+            </b>
           </a>
-          <a href="#" class="item">
-            <img src="{{ url_for('static', filename='img/cane2.png') }}">
+          <a class="item" href="about">
+            <b>
+              Chi siamo
+            </b>
+          </a>
+          <a class="item">
+            <b>
+              Il book
+            </b>
+          </a>
+          <a class="item">
+            <b>
+              I consigli
+            </b>
           </a>
         </div>
-        <div class="buttons">
-          <button class="dot">
-            .
-          </button>
-          <button class="dot">
-             .
-          </button>
+      </div>
+      <!--FIRST SECTION-->
+      <div style="display: flex; justify-content: space-evenly; flex-wrap: nowrap;">
+      <div class="section">
+        <!--SLIDESHOW-->
+        <div class="slideshow-container">
+          <div class="slideshow">
+            <a href="#" class="item">
+              <!-- <img src="{{ url_for('static', filename='img/cane2.png') }}"> -->
+              <img src="../static/img/cane2.png" alt="">
+            </a>
+            <a href="#" class="item">
+              <!-- <img src="{{ url_for('static', filename='img/labradoro.jpg') }}"> -->
+              <img src="../static/img/labradoro.jpg" alt="">
+            </a>
+            <a href="#" class="item">
+              <!-- <img src="{{ url_for('static', filename='img/cagnolino.jpg') }}"> -->
+              <img src="../static/img/cagnolino.jpg" alt="">
+            </a>
+            <a href="#" class="item">
+              <!-- <img src="{{ url_for('static', filename='img/cane.jpg') }}"> -->
+              <img src="../static/img/cane.jpg" alt="">
+            </a>
+          </div>
+          <div class="buttons">
+            <button class="dot" onclick="slideshow_view(0); reset_interval();">
+              .
+            </button>
+            <button class="dot" onclick="slideshow_view(1); reset_interval();">
+              .
+            </button>
+            <button class="dot" onclick="slideshow_view(2); reset_interval();">
+              .
+            </button>
+            <button class="dot" onclick="slideshow_view(3); reset_interval();">
+              .
+            </button>
+          </div>
         </div>
+        
+        <!--TEXT-->
+        <div class="text-container">
+          <div class="title" style="margin-top: 6vh;">
+            <b>
+              BENVENUTI
+            </b>
+          </div>
+            <div class="text">
+              <p>
+                Ciao. Il Progetto Uriel è un’organizzazione giovane nata con l'intento di aiutarti nel tuo percorso di scelta e addestramento del tuo amico peloso. 
+                Potrai trovare consigli e un book aggiornato con i cani adottabili.
+              </p>
+              <p>
+                Per avere più informazioni sui nostri servizi ti consigliamo di visitare la pagina "I nostri servizi" su questo sito.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <hr>
+      <!--NEWS-->
+      <div class="news">
+        <div class="item">
+          <!-- <img src="{{ url_for('static', filename='img/placeholder1.png') }}" alt=""> -->
+          <img src="../static/img/placeholder1.png" alt="">
+          <div class="text">
+            <span class="title">TITOLO</span>
+            <span class="subtitle">Sottotitolo ahahaha Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque!</span>
+          </div>
+        </div>
+        
+        <div class="item">
+          <!-- <img src="{{ url_for('static', filename='img/placeholder1.png') }}" alt=""> -->
+          <img src="../static/img/placeholder1.png" alt="">
+          <div class="text">
+            <span class="title">TITOLO</span>
+            <span class="subtitle">Sottotitolo ahahaha Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque!</span>
+          </div>
+        </div>
+        
+        <div class="item">
+          <!-- <img src="{{ url_for('static', filename='img/placeholder1.png') }}" alt=""> -->
+          <img src="../static/img/placeholder1.png" alt="">
+          <div class="text">
+            <span class="title">TITOLO</span>
+            <span class="subtitle">Sottotitolo ahahaha Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque!</span>
+          </div>
+        </div>
+        
       </div>
       
-      <!--TEXT-->
+      <div class="flex-around">
+        <button class="arrow-up" onclick="window.scrollTo(0, 0)">
+          <!-- <img src="{{ url_for('static', filename='img/arrow.svg') }}" alt=""> -->
+          <img src="../static/img/arrow.svg" alt="">
+        </button>
+  
+        <button class="arrow-up" onclick="window.scrollTo(0, 0)">
+          <!-- <img src="{{ url_for('static', filename='img/arrow.svg') }}" alt=""> -->
+          <img src="../static/img/arrow.svg" alt="">
+        </button>
+      </div>
     </div>
-
-    <!--NEWS-->
-
     <!--FOOTER-->
-  </div>
+    <div class="footer">
+      <div class="section">
+        Siamo belli gne gne gne Lorem ipsum dolor sit, amet cococococococococo
+      </div>
+      
+      <div class="section">
+        <h2>
+          Seguici anche su
+        </h2>
+        <div class="logos">
+          <a href="https://www.youtube.com">
+            <!-- <img src="{{ url_for('static', filename='../static/img/YouTube.svg') }}" alt=""> -->
+            <img src="../static/img/YouTube.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com">
+            <!-- <img src="{{ url_for('static', filename='../static/img/Twitter.svg') }}" alt=""> -->
+            <img src="../static/img/Twitter.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com">
+            <!-- <img src="{{ url_for('static', filename='../static/img/Facebook.svg') }}" alt=""> -->
+            <img src="../static/img/Facebook.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--SCRIPT/S-->
+    <!-- <script src="{{ url_for('static', filename='js/index.js') }}"></script> -->
+    <script src="../static/js/index.js"></script>
 </body>
 </html>
