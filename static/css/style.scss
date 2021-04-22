@@ -35,6 +35,7 @@ $color-text-extra-light : #CCCCFF;
 html
 {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body
@@ -51,7 +52,7 @@ body
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 /* Track */
@@ -86,13 +87,34 @@ button
     justify-content: space-between;
 }
 
+.section
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    // width: 100%;
+}
+
+.image-left
+{
+    float: left;
+    margin-left: 5vw;
+}
+
+.image-right
+{
+    float: right;
+    margin-right: 5vw;
+}
+
+// ---------------------------------------------------------------     HEADER
 .header
 {
     background-color: $color-section;
     padding: 10px;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1;
     transition: box-shadow 0.5s;
     display: flex;
     justify-content: space-between;
@@ -100,7 +122,7 @@ button
     
     .logo
     {
-        width: 50vw;
+        width: 60vw;
         img
         {
             width: 100%;
@@ -110,7 +132,34 @@ button
 
     .navbar
     {
-        display: none;
+        position: absolute;
+        transform:scale(0, 1);
+        top: -3vh;
+        right: -5vw;
+        display: flex;
+        flex-direction: column;
+        background-color: $color-menu;
+        // background-color: $color-section;
+        transition: transform 0.5s;
+        visibility: 0;
+        transform-origin: center right;
+        z-index: 10;
+        height: 120vh;
+
+        .item
+        {
+            padding: 5vh;
+            font-family: "Sansumi-UL";
+            font-size: 0.8rem;
+            white-space: nowrap;
+            text-decoration: none;
+            color: black;
+        }
+        .cross
+        {
+            display: flex; 
+            justify-content: flex-end;
+        }
     }
 
     .hamburger
@@ -118,11 +167,12 @@ button
         padding: 1vg;
     }
 }
-
+// ---------------------------------------------------------------     SLIDESHOW
 .slideshow-container
 {
-    $slideshow-w : 14.8vh * 2.5;
-    $slideshow-h : 10.5vh * 2.5;
+    $slideshow-w : 14.8vw * 6;
+    $slideshow-h : 10.5vw * 6;
+    
 
     text-align: center;
     width: $slideshow-w;
@@ -187,13 +237,13 @@ button
         }
     }
 }
-
+// ---------------------------------------------------------------     TEXT
 .text-container
 {
     font-size: 0.8rem;
     color:$color-text-light;
     font-family: "Roboto";
-    height: 100hv;
+    width: 100vw;
 
     .title
     {
@@ -221,11 +271,11 @@ button
         font-size: 1.2em;
     }
 }
-
+// ---------------------------------------------------------------     ARROWS
 .arrow-up
 {
-    width: 10vw;
-    height: 10vw;
+    width: 6vh;
+    height: 6vh;
 
     img
     {
@@ -238,20 +288,24 @@ button
         }
     }
 }
-
+// ---------------------------------------------------------------     NEWS
 .news
 {
-    $img-width : 14.8vw * 3;
-    $img-height : 10.5vw * 3;
+    $img-width : 14.8vh * 2;
+    $img-height : 10.5vh * 2;
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+
+    width: 100%;
 
     .item
     {
         padding: 1vh;
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
 
         img
         {
@@ -287,7 +341,7 @@ button
     }
 }
 
-
+// ---------------------------------------------------------------     FOOTER
 
 .footer
 {
@@ -295,22 +349,188 @@ button
     color: $color-text-extra-light;
     display: flex;
     justify-content: center;
+    margin-top: 10vh;
 
     .section
     {
         flex-basis: 50%;
-        margin: 3vw;
         text-align: center;
 
         .logos
         {
             display: flex;
             justify-content: space-evenly;
+            flex-wrap: wrap;
 
             img
             {
-                width: 7vw;
+                width: 7vh;
+                margin: 3vw;
+
+                padding: 10px;
+                transition: background-color 0.5s;
+                border-radius: 10%;
+
+                &:hover
+                {
+                    background-color: $color-menu;
+                }
             }
+        }
+    }
+}
+// ---------------------------------------------------------------     MOBILE VERSION
+@media (min-width: 1025px)
+{
+    // ---------------------------------------------------------------     HEADER
+    .header
+    {
+        display: block;
+        .hamburger
+        {
+            display: none;
+        }
+        .logo
+        {
+            width: 30vw;
+        }
+
+        .navbar
+        {
+            position: static;
+            transform:scale(1, 1);
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: row;
+            background-color: $color-menu;
+            // background-color: $color-section;
+            transition: transform 0.5s;
+            transform-origin: center right;
+            z-index: 10;
+            height: 12vh;
+            justify-content: space-between;
+
+            .item
+            {
+                padding: 5vh;
+                height: 2vh;
+                font-family: "Sansumi-UL";
+                text-align: center;
+                font-size: 2rem;
+                transition: letter-spacing 0.5s;
+                &:hover
+                {
+                    letter-spacing: 0.1em;
+                }
+            }
+            .cross
+            {
+                display: none;
+            }
+        }
+    }
+    // ---------------------------------------------------------------     SLIDESHOW
+    .slideshow-container
+    {
+        $slideshow-w : 14.8vw * 3.4;
+        $slideshow-h : 10.5vw * 3.4;
+
+        text-align: center;
+        width: $slideshow-w;
+        height: $slideshow-h;
+        // position: static;
+        // margin-left: 5vw;
+
+        // left: 50vw;
+        transform: translateX(-50%);
+
+        margin-top: 2vh;
+        flex-basis: 10%;
+
+        .slideshow
+        {
+            overflow: hidden;
+            width: $slideshow-w;
+            height: $slideshow-h;
+            // position: relative;
+
+            .item
+            {
+                transition: opacity 0.5s;
+                width: $slideshow-w;
+                height: $slideshow-h;
+
+                left: 0;
+                top: 0;
+
+                img
+                {
+                    transition: box-shadow 0.5s, transform 0.5s;
+                    width: inherit;
+                    height: inherit;
+                }
+
+                &:hover
+                {
+                    img
+                    {
+                        box-shadow: 0px 0.1em 1em 0.05em rgba(0, 0, 0, 0.6);
+                        transform: translate(0, -1vh);
+                    }
+                }
+            }
+
+        }
+        .buttons
+        {
+            text-align: center;
+            margin-top: 1vh;
+            
+            button
+            {
+                height: 2vh;
+                width: 2vh;
+                border-radius: 100%;
+                color: transparent;
+                transition: background-color, 0.5s;
+                margin-left: 1vw;
+                margin-right: 1vw;
+            }
+        }
+    }
+    // ---------------------------------------------------------------     TEXT
+    .text-container
+    {
+        font-size: 0.8rem;
+        color:$color-text-light;
+        font-family: "Roboto";
+        text-align: center;
+
+        .title
+        {
+            font-size: 1.8rem;
+            font-family: "Sansumi-UL";
+            text-align: center;
+            color: black;
+
+            padding-bottom: 4vh;
+            transition: letter-spacing 1s;
+
+            &:hover
+            {
+                letter-spacing: 0.1em;
+            }
+        }
+
+        .text
+        {
+            margin-top: 0;
+            margin-left: 5%;
+            margin-right: 5%;
+            word-spacing: 0.3em;
+            line-height: 1.5em;
+            font-size: 1.2em;
         }
     }
 }

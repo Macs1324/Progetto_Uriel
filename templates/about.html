@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//db.onlinewebfonts.com/c/5a774fb0d936a5c77c616acc2192c8db?family=Avenir+Next+Cyr+Ultra+Light" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Progetto Uriel - Chi Siamo</title>
 </head>
 <body>
@@ -13,75 +13,78 @@
       <!--HEADER-->
       <div class="header">
         <div class="logo">
-          <img src="{{ url_for('static', filename='img/logo-complete.svg') }}">
+          <!-- <img src="{{ url_for('static', filename='img/logo-complete.svg') }}"> -->
+          <a href="index.html">
+            <img src="../static/img/logo-complete.svg" alt="">
+          </a>
+        </div>
+        <div class="hamburger">
+          <img src="../static/img/Hamburger_icon.svg" alt="" onclick="nav_popup();">
         </div>
         <div class="navbar">
-          <a class="item">
-            I nostri servizi
+          <div class="cross item"  onclick="nav_hide()" >
+            <img src="../static/img/cross.svg" alt="" style="width: 2vh; height: 2vh; @media (min-width: 767px) {
+              display: none;
+            }">
+          </div>
+          <a class="item" href="services.html">
+            <b>  
+              I nostri servizi
+            </b>
           </a>
-          <a class="item" href="about">
-            Chi siamo
+          <a class="item" href="about.html">
+            <b>
+              Chi siamo
+            </b>
           </a>
-          <a class="item">
-            Il book
+          <a class="item" href="book.html">
+            <b>
+              Il book
+            </b>
           </a>
-          <a class="item">
-            I consigli
+          <a class="item" href="suggestions.html">
+            <b>
+              I consigli
+            </b>
           </a>
         </div>
       </div>
       <!--FIRST SECTION-->
       <div class="section">
-        <!--SLIDESHOW-->
-        <div class="slideshow-container">
-          <div class="slideshow">
-            <a href="#" class="item">
-              <img src="{{ url_for('static', filename='img/placeholder1.png') }}">
-            </a>
-            <a href="#" class="item">
-              <img src="{{ url_for('static', filename='img/placeholder2.png') }}">
-            </a>
-            <a href="#" class="item">
-              <img src="{{ url_for('static', filename='img/placeholder1.png') }}">
-            </a>
-            <a href="#" class="item">
-              <img src="{{ url_for('static', filename='img/placeholder2.png') }}">
-            </a>
-          </div>
-          <div class="buttons">
-            <button class="dot" onclick="slideshow_view(0); reset_interval();">
-              .
-            </button>
-            <button class="dot" onclick="slideshow_view(1); reset_interval();">
-              .
-            </button>
-            <button class="dot" onclick="slideshow_view(2); reset_interval();">
-              .
-            </button>
-            <button class="dot" onclick="slideshow_view(3); reset_interval();">
-              .
-            </button>
-          </div>
-        </div>
-        
         <!--TEXT-->
         <div class="text-container">
-          <div class="title" style="margin-top: 6vh;">
-            BENVENUTI
+          <div class="title" style="margin-top: 6vh; text-align: right; margin-right: 20vw;">
+            CHI SIAMO
           </div>
-            <div class="text" style="">
-              Vi diamo il benvenuto sul nostro sito, siamo un’organizzazione giovane con il solo intento di aiutarti nel tuo percorso di scelta e addestramento del tuo amico peloso. 
-              Potrete trovare consigli e un book aggiornato con i cani adottabili.
-              Per avere più informazione sui nostri servizi vi consigliamo di visitare la pagina apposita su questo sito
+            <div class="text" style=" text-align: right; display: flex; justify-content: flex-end;">
+              <p style="width: 50%; margin-left: 10vw;">
+
+                L’Uriel project prende il nome da Uriel, il gatto di uno dei suoi fondatori, Zineb Bensiah, che ha ispirato questo progetto in primo luogo.
+                
+                L’Uriel project vuole portare insieme canili e gattili della nostra zona, per poter dare una chance a tutti gli animali in qualunque posto. 
+                Tutti meritano una possibilità!
+              </p>
+
             </div>
-          </div>
+            
+            <div class="title" style="text-align: left; margin-left: 20vw;">LA STORIA DEL PROGETTO</div>
+            <div class="text" style=" text-align: left; display: flex; justify-content: flex-start;">
+              <p style="width: 60%; margin-right: 10vw;">
+                Il tutto iniziò quando una delle fondatrici, Zineb Bensiah, si ritrovò a voler prendere un gatto. Non aveva importanza se fosse di razza, da un gattile o da un allevatore, con queste informazioni si rivolse alle sue amiche ed insieme iniziarono la ricerca.
+                Tuttavia, la questione si rivelò molto più ardua: non trovarono un gatto da nessuna parte, cercarono su siti di canili e gattili ovunque, ma sembrava non esserci nulla.
+                La ricerca andò avanti per qualche mese, e a quel punto iniziarono ad abbattersi, pensando che non avrebbero mai trovato un gatto che andasse bene. Fino a che, provando e parlandone con più persone possibili, riuscirono a trovare il contatto di una persona molto disponibile, che lavorava in un canile.
+                Il gatto in questione non era neppure catalogato sul sito del canile stesso, e di un carattere timido, dunque passava inosservato a chi potesse avere il lusso andare al canile, un’impresa ardua per il periodo per via della pandemia di Covid-19 in atto.
+                Finalmente riuscirono a portare il gatto a casa, come regalo di compleanno per l’interessata.
+                Quel gatto fu poi ribattezzato Uriel.
+                
+              </p>
+            </div>
+            </div>
         </div>
-        
-        <!--NEWS-->
       </div>
       <!--FOOTER-->
       
       <!--SCRIPT/S-->
-      <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+      <script src="../static/js/index.js"></script>
   </body>
   </html>

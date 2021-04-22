@@ -37,12 +37,12 @@ let header = document.getElementsByClassName("header")[0]
       if(window.scrollY > 1)
       {
           document.getElementsByClassName("header")[0].style.boxShadow = "0px 1em 0.5em 0.1em rgba(0, 0, 0, 0.6)";
-          document.getElementsByClassName("header")[0].getElementsByClassName("logo")[0].getElementsByTagName("img")[0].style.width = "30vw";
+          document.getElementsByClassName("header")[0].getElementsByClassName("logo")[0].getElementsByTagName("img")[0].style.width = "30%";
       }
       else
       {
           document.getElementsByClassName("header")[0].style.boxShadow = "none";
-          document.getElementsByClassName("header")[0].getElementsByClassName("logo")[0].getElementsByTagName("img")[0].style.width = "50vw";
+          document.getElementsByClassName("header")[0].getElementsByClassName("logo")[0].getElementsByTagName("img")[0].style.width = "50%";
       }
     } 
 
@@ -51,7 +51,24 @@ document.addEventListener('scroll', debounce(storeScroll), { passive: true });
 
 // Update scroll position for first time
 storeScroll();
+//---------------------------------------------------------------------     NAVBAR POPUP
+let navbar = document.getElementsByClassName("navbar")[0];
+function nav_popup()
+{
+  navbar.style.transform = "scale(1, 1)";
+}
 
+function nav_hide()
+{
+  navbar.style.transform = "scale(0, 1)";
+}
+
+window.onresize = () => {
+  if(window.innerWidth > 1023)
+  {
+    navbar.style.transform = "scale(1, 1)";
+  }
+}
 
 //-----------------------------------------------------------------------SLIDESHOW
 let slideshow_index = 0;

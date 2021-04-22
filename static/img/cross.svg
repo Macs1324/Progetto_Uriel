@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1000 1000"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg10"
+   sodipodi:docname="cross.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"><defs
+   id="defs14" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   id="namedview12"
+   showgrid="false"
+   inkscape:zoom="0.85"
+   inkscape:cx="522.35294"
+   inkscape:cy="463.52941"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg10" />
+<metadata
+   id="metadata2"> Svg Vector Icons : http://www.onlinewebfonts.com/icon <rdf:RDF><cc:Work
+     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata>
+<g
+   id="g8"><g
+     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+     id="g6"><path
+       d="M630.2,4489.8L100,3957.7l1917.9-1917.9L3937.7,120L2017.9-1799.8L100-3717.7l530.2-532.1l532.1-530.2l1917.9,1917.9L5000-942.3l1919.8-1919.8L8837.7-4780l532.1,530.2l530.2,532.1L7982.1-1799.8L6062.3,120l1919.8,1919.8L9900,3957.7l-530.2,532.1L8837.7,5020L6919.8,3102.1L5000,1182.3L3080.2,3102.1L1162.3,5020L630.2,4489.8z"
+       id="path4" /></g></g>
+<path
+   style="fill:#000000;stroke-width:1.17647"
+   d="M 883.31112,12.959559 C 868.65719,23.989034 856.41392,38.213116 842.93978,50.707515 728.17216,164.3586 614.31611,278.92839 500,393.03539 378.99272,272.43049 258.85469,150.94628 137.04484,31.15394 130.09976,25.274765 124.26937,17.260256 116.29596,12.950368 102.4995,22.525328 91.223953,35.606714 78.854213,46.995593 56.668408,69.375891 33.515171,91.006932 13.350184,115.24816 c -1.116299,4.36506 5.126354,7.11532 7.041585,10.51737 C 102.00974,210.03868 185.73248,292.24565 268.46242,375.42552 309.98674,416.95035 351.51106,458.47518 393.03539,500 272.43049,621.00728 150.94628,741.14531 31.15394,862.95516 c -5.890425,6.93398 -13.851555,12.77265 -18.20587,20.7236 5.776979,10.39549 15.92515,17.92757 23.731839,26.84295 25.440107,25.1481 49.865925,51.44364 76.730021,75.08261 4.78677,4.31307 8.71553,-3.84379 12.3556,-5.99608 C 210.03868,897.99026 292.24565,814.26752 375.42552,731.53758 416.95035,690.01326 458.47518,648.48894 500,606.96461 c 121.04074,120.63331 241.20414,242.15643 363.04951,361.97323 6.90029,5.86861 12.71362,13.80207 20.64075,18.11409 10.29239,-5.71122 17.75076,-15.74765 26.57206,-23.47644 26.60896,-26.25848 52.92266,-52.8141 79.38841,-79.21657 -2.14865,-6.05132 -9.86514,-10.41513 -14.14205,-15.81043 C 852.66066,745.699 729.81264,622.84951 606.96461,500 729.99284,376.54713 853.97724,254.03628 976.01792,129.61167 c 3.51288,-4.83639 10.08795,-8.47408 11.90947,-14.12454 -29.16145,-31.732994 -60.17008,-61.819284 -90.97657,-91.976101 -4.39282,-3.375663 -8.14114,-9.098701 -13.6397,-10.55147 z"
+   id="path839" /></svg>

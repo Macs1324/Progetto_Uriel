@@ -17,28 +17,35 @@
       <div class="header">
         <div class="logo">
           <!-- <img src="{{ url_for('static', filename='img/logo-complete.svg') }}"> -->
-          <img src="../static/img/logo-complete.svg" alt="">
+          <a href="index.html">
+            <img src="../static/img/logo-complete.svg" alt="">
+          </a>
         </div>
         <div class="hamburger">
-          <img src="../static/img/Hamburger_icon.svg" alt="">
+          <img src="../static/img/Hamburger_icon.svg" alt="" onclick="nav_popup();">
         </div>
         <div class="navbar">
-          <a class="item">
+          <div class="cross item"  onclick="nav_hide()" >
+            <img src="../static/img/cross.svg" alt="" style="width: 2vh; height: 2vh; @media (min-width: 767px) {
+              display: none;
+            }">
+          </div>
+          <a class="item" href="services.html">
             <b>  
               I nostri servizi
             </b>
           </a>
-          <a class="item" href="about">
+          <a class="item" href="about.html">
             <b>
               Chi siamo
             </b>
           </a>
-          <a class="item">
+          <a class="item" href="book.html">
             <b>
               Il book
             </b>
           </a>
-          <a class="item">
+          <a class="item" href="suggestions.html">
             <b>
               I consigli
             </b>
@@ -46,7 +53,7 @@
         </div>
       </div>
       <!--FIRST SECTION-->
-      <div style="display: flex; justify-content: space-evenly; flex-wrap: nowrap;">
+      <div>
       <div class="section">
         <!--SLIDESHOW-->
         <div class="slideshow-container">
