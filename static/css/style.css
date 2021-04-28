@@ -258,6 +258,58 @@ button {
   font-size: 1.2em;
 }
 
+.text-container-left {
+  text-align: left;
+  margin-left: 5vw;
+}
+
+.text-container-right {
+  text-align: right;
+  margin-right: 5vw;
+}
+
+.text-container-center {
+  text-align: center;
+}
+
+.text-container-right, .text-container-left, .text-container-center {
+  padding-top: 5vh;
+  font-size: 1.3rem;
+  padding-bottom: 5vh;
+}
+
+.text-container-right img, .text-container-left img, .text-container-center img {
+  width: 30vh;
+  height: auto;
+  border-radius: 3px;
+  border: 3px solid #0C7896;
+  margin-top: 5vh;
+}
+
+.text-container-right .title, .text-container-left .title, .text-container-center .title {
+  font-size: 2.3rem;
+  font-family: "Sansumi-UL";
+  color: black;
+  padding-bottom: 4vh;
+  -webkit-transition: letter-spacing 1s;
+  transition: letter-spacing 1s;
+}
+
+.text-container-right .title a, .text-container-left .title a, .text-container-center .title a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-container-right .title:hover, .text-container-left .title:hover, .text-container-center .title:hover {
+  letter-spacing: 0.1em;
+}
+
+.text-container-right .text, .text-container-left .text, .text-container-center .text {
+  font-family: "Roboto";
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .arrow-up {
   width: 6vh;
   height: 6vh;
@@ -400,19 +452,26 @@ button {
     -webkit-transform-origin: center right;
             transform-origin: center right;
     z-index: 10;
-    height: 12vh;
+    height: 6vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align: center;
   }
   .header .navbar .item {
     padding: 5vh;
     height: 2vh;
     font-family: "Sansumi-UL";
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     -webkit-transition: letter-spacing 0.5s;
     transition: letter-spacing 0.5s;
+    height: 100%;
   }
   .header .navbar .item:hover {
     letter-spacing: 0.1em;

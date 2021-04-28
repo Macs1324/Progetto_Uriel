@@ -271,6 +271,66 @@ button
         font-size: 1.2em;
     }
 }
+.text-container-left
+{
+    text-align: left;
+    margin-left: 5vw;
+
+}
+
+.text-container-right
+{
+    text-align: right;
+    margin-right: 5vw;
+}
+
+.text-container-center
+{
+    text-align: center;
+}
+
+.text-container-right, .text-container-left, .text-container-center
+{
+    padding-top: 5vh;
+    font-size: 1.3rem;
+    img
+    {
+        width: 30vh;
+        height: auto;
+        border-radius: 3px;
+        border: 3px solid $color-bg;
+        margin-top: 5vh;
+    }
+    padding-bottom: 5vh;
+
+    .title
+    {
+        font-size: 2.3rem;
+        font-family: "Sansumi-UL";
+        color: black;
+
+        padding-bottom: 4vh;
+        transition: letter-spacing 1s;
+
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+
+        &:hover
+        {
+            letter-spacing: 0.1em;
+        }
+    }
+    .text
+    {
+        font-family: "Roboto";
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 // ---------------------------------------------------------------     ARROWS
 .arrow-up
 {
@@ -379,7 +439,7 @@ button
         }
     }
 }
-// ---------------------------------------------------------------     MOBILE VERSION
+// ---------------------------------------------------------------     DESKTOP VERSION
 @media (min-width: 1025px)
 {
     // ---------------------------------------------------------------     HEADER
@@ -408,8 +468,11 @@ button
             transition: transform 0.5s;
             transform-origin: center right;
             z-index: 10;
-            height: 12vh;
+            height: 6vh;
+            align-items: center;
+            align-content: center;
             justify-content: space-between;
+            text-align: center;
 
             .item
             {
@@ -417,8 +480,9 @@ button
                 height: 2vh;
                 font-family: "Sansumi-UL";
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1.4rem;
                 transition: letter-spacing 0.5s;
+                height: 100%;
                 &:hover
                 {
                     letter-spacing: 0.1em;

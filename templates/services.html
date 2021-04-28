@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Uriel - Servizi e contatti</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="page">
+        <!--HEADER-->
+        <div class="header">
+            <div class="logo">
+              <!-- <img src="{{ url_for('static', filename='img/logo-complete.svg') }}"> -->
+              <a href="index.html">
+                <img src="../static/img/logo-complete.svg" alt="">
+              </a>
+            </div>
+            <div class="hamburger">
+              <img src="../static/img/Hamburger_icon.svg" alt="" onclick="nav_popup();">
+            </div>
+            <div class="navbar">
+              <div class="cross item"  onclick="nav_hide()" >
+                <img src="../static/img/cross.svg" alt="" style="width: 2vh; height: 2vh; @media (min-width: 767px) {
+                  display: none;
+                }">
+              </div>
+              <a class="item" href="services.html">
+                <b>  
+                  Servizi e contatti
+                </b>
+              </a>
+              <a class="item" href="about.html">
+                <b>
+                  Chi siamo
+                </b>
+              </a>
+              <a class="item" href="suggestions_cin.html">
+                <b>
+                  Consigli cinofili
+                </b>
+              </a>
+              <a class="item" href="suggestions_vet.html">
+                <b>
+                  Consigli veterinari
+                </b>
+              </a>
+            </div>
+          </div>
+        <!--TEXT-->
+        <div class="text-container-center">
+          <div class="title">
+            I NOSTRI SERVIZI PER IL PUBBLICO:
+            </div>
+            <div class="text">
+              Ecco una lista dei servizi offerti a tutti coloro che stanno visitando per la prima volta il nostro sito. 
+              In fondo troverete tutti i nostri contatti.
+              Mettiamo a vostra disposizione vari servizi per iniziare la vostra nuova vita con un amico a 4 zampe accanto; vi sosterremo in tutto il cammino dalla ricerca alla sua cura. 
+Eccovi quindi una lista dei servizi da noi offerti. In fondo potrete trovare i nostri contatti e social, non esitate a contattarci per qualunque dubbio o necessità.
+
+            </div>
+        </div>
+
+
+        <div class="text-container-center">
+          <div class="title">
+            <a href="book.html">
+              BOOK
+            </a>
+          </div>
+          <div class="text">
+            In questo spazio troverete tutti gli animali adottabili in base alla vostra zona e alle vostre disponibilità. 
+            Un indice digitale, comodo, pratico e dettagliato di tutti gli animali che si possono adottare degli shelter con cui collaboriamo; viene costantemente aggiornato e offre la possibilità di una ricerca rispetto a zona, sesso e taglia del animale per permetterti di cercare l’animale perfetto per te.  
+          </div>
+          <img src="../static/img/book-pubblico.jpeg" alt="">
+        </div>
+
+
+
+        <div class="text-container-center">
+          <div class="title">
+            <a href="suggstions_vet.html">
+              CONSIGLI VETERINARI
+            </a>
+          </div>
+
+          <div class="text">
+            È il tuo primo animale domestico? Allora consultate questo spazio dove troverete alcune informazioni veterinarie che offriamo per la cura sanitaria dei vostri amici animali.
+            E’ il tuo primo animale domestico? Per prenderti cura di lui al meglio inizia ad informarti consultando la nostra pagina con alcune basilari informazioni veterinarie. L’amore che gli darai non basterà a proteggerlo dalle malattie, poni molta attenzione sulla salute fisica e mentale del tuo nuovo amico.
+          </div>
+        </div>
+
+        <div class="text-container-center">
+          <div class="title">
+            <a href="suggestions_cin.html"> 
+              CONSIGLI CINOFILI
+            </a>
+          </div>
+          <div class="text">
+            Questo è uno spazio dedicato nello specifico all'addestramento dei cani. Consigli e informazioni per addestrare al meglio i vostri amici a quattro zampe.
+            E’ sempre molto importante, se si adotta un cane, intraprendere un percorso di educazione per poter vivere entrambi una vita serena e felice. Questi percorsi sono da seguire con l’aiuto di un educatore cinofilo professionista, ma puoi già iniziare ad informarti sull’argomento consultando il nostro spazio dedicato ai consigli cinofili.
+          </div>
+        </div>
+
+        <div class="text-container-center">
+          <div class="title">
+            <a href="#">CONTATTI</a>
+          </div>
+
+          <div class="text">
+            Andate a seguirci nelle nostre pagine social:
+
+            <div>
+              <a href="https://youtube.com/channel/UCTKEfnhwZf1yr_P08zbED9Q">
+                <img src="../static/img/YouTube.svg" alt="" style="width: 6vh; border: none; margin-left: 5%; margin-right: 5%;">
+              </a>
+              <a href="https://instagram.com/uriel.project?igshid=puzvmrc11my9">
+                <img src="../static/img/Instagram.svg" alt="" style="width: 6vh; border: none; margin-left: 5%; margin-right: 5%;">
+              </a>
+              <a href="https://www.facebook.com/uriel.project/">
+                <img src="../static/img/Facebook.svg" alt="" style="width: 6vh; border: none; margin-left: 5%; margin-right: 5%;">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: #bbb; margin: none; border: none;">
+          <div class="text-container-center">
+            <div class="title">
+              I NOSTRI SERVIZI PER GLI SHELTERS:
+            </div>
+            <div class="text">
+              Ecco una lista dei servizi offerti agli shelters che decidono di collaborare con noi. Contattateci se avete bisogno di più informazioni
+    
+              Alla base del nostro progetto si trova la collaborazione tra shelter e volontari che tramite noi migliorano la loro capacità di raggiungere le persone per adozioni e donazioni. Se sei interessato a collaborare con noi o a usufruire dei nostri servizi dai un occhiata a ciò che offriamo e contattaci (i contatti sono elencati alla fine, seguici anche sui social!).
+    
+            </div>
+          </div>
+    
+          <div class="text-container-center">
+            <div class="title">
+              BOOK
+            </div>
+    
+            <div class="text">
+              Offriamo uno spazio apposito nel nostro sito per contenere un database dei vostri animali adottabili con una descrizione, in questo modo potremmo agevolare i clienti nella scelta del loro animale dei sogni in maniera efficace.
+              Un indice digitale, comodo, pratico e dettagliato di tutti gli animali che si possono adottare degli shelter con cui collaboriamo; viene costantemente aggiornato e offre la possibilità di una ricerca rispetto a zona, sesso e taglia del animale per permetterti di cercare l’animale perfetto per te.  
+            </div>
+            <img src="../static/img/book shelters.jpeg" alt="">
+          </div>
+
+          <div class="text-container-center">
+            <div class="title">
+              PROFILI SOCIAL
+            </div>
+            <div class="text">
+              È il tuo primo animale domestico? Allora consultate questo spazio dove troverete alcune informazioni veterinarie che offriamo per la cura sanitaria dei vostri amici animali.
+
+              E’ il tuo primo animale domestico? Per prenderti cura di lui al meglio inizia ad informarti consultando la nostra pagina con alcune basilari informazioni veterinarie. L’amore che gli darai non basterà a proteggerlo dalle malattie, poni molta attenzione sulla salute fisica e mentale del tuo nuovo amico.
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="../static/js/header.js"></script>
+</body>
+</html>
